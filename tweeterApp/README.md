@@ -18,3 +18,10 @@ This repository is the starter code for the project: Students will fork and clon
 - mongodb
 - chance
 - body-parser
+
+
+## Screenshots
+
+!["Beautiful home page, with simple design"](https://github.com/CamLi23/project3-LHL/blob/master/tweeterApp/docs/HomePage.png)
+!["Example of composing a new tweet. Now with sliding toggle input box!"](https://github.com/CamLi23/project3-LHL/blob/master/tweeterApp/docs/compose-tweet.png)
+!["See your tweet populate wihtout even reloading the page!"](https://github.com/CamLi23/project3-LHL/blob/master/tweeterApp/docs/example-tweet.png)
