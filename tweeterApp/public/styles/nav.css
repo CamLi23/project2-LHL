@@ -1,0 +1,22 @@
+#nav-bar {
+  background-color: #00a087;
+  height: 80px;
+  display: block;
+  padding: 0 2em 0;
+ }
+
+ #nav-bar .header {
+  font-family: 'Roboto';
+  color: #e8fdff;
+  line-height: 80px;
+  float: left;
+  font-size: 35px;
+ }
+
+#nav-bar .logo {
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+ }
+

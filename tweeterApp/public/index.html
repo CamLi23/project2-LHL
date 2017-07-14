@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700,700i" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar">
+      <img class="logo" src="/images/bird.png">
+      <span class="header">Tweeter</span>
+      <button class="compose-button">Compose</button>
+    </nav>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section id="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id="submitForm" action = "/tweets" method = "post">
+          <textarea id="textArea" name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section id="tweets-container">
+        <article class="posted-tweet">
+            <header class="article-header">
+            <img class="profile-pic" src="/images/twit-egg-green.png">
+            <span class="name">Cameron Cutler</span>
+            <span class="twitter-handle">@CamLi23</span>
+            </header>
+          <div class="content-tweet"><span>Tweet ContentTweet ContentTweet ContentTweet ContentTweet ContentTweet Content</span>
+          </div>
+            <footer class = "article-footer">
+            <span>Dummy Tweet info</span>
+            <div class= "icons">
+              <i class="fa fa-flag" aria-hidden="true"></i>
+              <i class="fa fa-retweet" aria-hidden="true"></i>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </div>
+            </footer>
+        </article>
+      </section>
+    </main>
+
+  </body>
+</html>
