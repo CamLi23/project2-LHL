@@ -127,7 +127,7 @@ article .icons {
 
 .compose-button {
     background-color: white;
-    border: solid 1px black ;
+    border: solid 1px #717171 ;
     border-radius: 10px;
     color: #00a087;
     cursor: pointer;
@@ -135,6 +135,7 @@ article .icons {
     float: right;
     font-size: 16px;
     margin: 15px 20px;
+    opacity: .9;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

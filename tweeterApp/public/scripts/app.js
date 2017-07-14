@@ -43,29 +43,29 @@ $( document ).ready(function() {
     return $tweet;
   }
 
-function renderTweets(tweets) {
-  // loops through tweets
-  for (each of tweets) {
-    // calls createTweetElement for each tweet
-    var $tweet = createTweetElement(each);
+  function renderTweets(tweets) {
+    // loops through tweets
+    for (each of tweets) {
+      // calls createTweetElement for each tweet
+      var $tweet = createTweetElement(each);
 
-     // takes return value and appends it to the tweets container
-    $('#tweets-container').prepend($tweet);
+       // takes return value and appends it to the tweets container
+      $('#tweets-container').prepend($tweet);
+    }
   }
-}
 
-function loadTweets() {
-  $.ajax({
-      url: '/tweets',
-      method: 'GET',
-      })
-      .done(function (data) {
-        renderTweets(data);
-        // console.log(data);
-      });
+  function loadTweets() {
+    $.ajax({
+        url: '/tweets',
+        method: 'GET',
+        })
+        .done(function (data) {
+          renderTweets(data);
+          // console.log(data);
+        });
+  }
 
-}
-
+  // Uses AJAX functionality to post the new data
   function postTweet(data) {
 
      return $.ajax({
@@ -74,7 +74,6 @@ function loadTweets() {
         data: data,
         datatype: 'JSON'
       })
-
   }
 
 
